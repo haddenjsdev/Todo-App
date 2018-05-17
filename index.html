@@ -16,25 +16,23 @@
       <div class="input-wrapper">
         <i class="material-icons inputIcon">note_add</i>
         <input class="input1" placeholder="Start Adding Things.."/>
-        <input class="input2" type="submit" value="Add Item" />
+        <input class="input2" id="addItem" type="submit" value="Add Item" />
       </div>
-      <div class="list-wrapper">
-        <div class=="todo-item">
-          <p class=="todo-item-title">Sed ut perspiciatis unde omnis iste natus error.</p>
+      <div class="list-wrapper" id="list-wrapper">
+        <!-- <div class="todo-item">
+          <p class="todo-item-title">Sed ut perspiciatis unde omnis iste natus error.</p>
           <div class="meta-wrapper">
             <span>May 15, 8pm </span>
           </div>
-        </div>
-        <div class=="todo-item">
-          <p class=="todo-item-title">Sed ut perspiciatis unde omnis iste natus error.</p>
-          <div class="meta-wrapper">
-            <span>May 15, 8pm </span>
-          </div>
-        </div>
+        </div> -->
       </div>
     </div>
   </div>
   <script src="main.js"></script>
+  <script>
+    var mySearch = new SearchFilter('list-wrapper');
+    mySearch.init();
+  </script>
 </body>
 
 </html>
